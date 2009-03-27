@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4D78A698-BE22-4EA2-9D7E-7C2B7E5BA3F4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WiiRemote</RootNamespace>
+    <AssemblyName>WiiRemote</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HIDDevices, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HIDDevices\HIDDevices\bin\Release\HIDDevices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data Stuctures\Accelerometer.cs" />
+    <Compile Include="Data Stuctures\Buttons.cs" />
+    <Compile Include="Data Stuctures\MemoryType.cs" />
+    <Compile Include="Data Stuctures\DataRequestDetails.cs" />
+    <Compile Include="Data Stuctures\Infrared.cs" />
+    <Compile Include="Data Stuctures\LEDStates.cs" />
+    <Compile Include="Data Stuctures\ReportTypes.cs" />
+    <Compile Include="Data Stuctures\Rumble.cs" />
+    <Compile Include="Events\AccelerationChangedEventArgs.cs" />
+    <Compile Include="Events\ButtonPushedEventArgs.cs" />
+    <Compile Include="Events\IRLocationChangedEventArgs.cs" />
+    <Compile Include="Events\LowBatteryEventArgs.cs" />
+    <Compile Include="Exceptions\InvalidDataException.cs" />
+    <Compile Include="Exceptions\ReportErrorException.cs" />
+    <Compile Include="Exceptions\WiiRemoteTimeoutException.cs" />
+    <Compile Include="Exceptions\IncorrectReportException.cs" />
+    <Compile Include="Exceptions\NotAWiiRemoteException.cs" />
+    <Compile Include="Exceptions\WiiRemoteNotConnectedException.cs" />
+    <Compile Include="WiiRemote.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClassContentTemplate.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WiiRemote.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

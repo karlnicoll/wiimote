@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WiiRemote.WiiRemote">
+    <Position X="0.5" Y="0.5" Width="6" />
+    <AssociationLine Name="rumble" Type="WiiRemote.RumbleState" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="2.5" />
+        <Point X="7.49" Y="2.5" />
+        <Point X="7.49" Y="2.5" />
+        <Point X="8.75" Y="2.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>A4AAABAQWEopBCCAIgAQCIgRAEBhVIQEEAisBCIBAJA=</HashCode>
+      <FileName>WiiRemote.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="leds" />
+      <Field Name="rumble" />
+      <Field Name="accelData" />
+      <Field Name="buttons" />
+      <Field Name="irLoc" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="dataRequestQueue" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="WiiRemote.Accelerometer" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAQAAAAAAIAAAACACAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data Stuctures\Accelerometer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WiiRemote.WiiRemoteButtons" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAAACAoAQAAEAAAEIADAAAABAAwUQAAACCCAKAUgCAI=</HashCode>
+      <FileName>Data Stuctures\Buttons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="WiiRemote.LEDStates" Collapsed="true">
+    <Position X="8.75" Y="3" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAIQAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data Stuctures\LEDStates.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="WiiRemote.DataRequestDetails" Collapsed="true">
+    <Position X="8.75" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data Stuctures\DataRequestDetails.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="System.Drawing.PointF" Collapsed="true">
+    <Position X="8.75" Y="6" Width="2.75" />
+    <TypeIdentifier />
+  </Struct>
+  <Enum Name="WiiRemote.RumbleState" Collapsed="true">
+    <Position X="8.75" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Data Stuctures\Rumble.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
